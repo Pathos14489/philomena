@@ -22,7 +22,6 @@ if [[ $MIX_ENV == "dev" ]]; then
   /bin/run-development
   exit $?
 fi
-mix reindex_all
 mix ecto.migrate
 
 #mix ecto.load -r Philomena.Repo -d priv/repo/structure.sql --skip-if-loaded
