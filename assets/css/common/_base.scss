@@ -86,10 +86,6 @@ a:hover {
   color: $link_hover_color;
 }
 
-p a,.flash a, .communication__body__text a {
-  font-weight: bold;
-}
-
 img {
   margin: 0;
   border: 0;
@@ -344,10 +340,9 @@ i.favicon-home {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  min-width: 2em;
-  height: 2em;
+  min-width: 1em;
+  height: 1em;
   display: inline-block;
-  margin-bottom: -0.5em;
 }
 
 // changelog
