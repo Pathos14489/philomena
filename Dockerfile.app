@@ -7,8 +7,7 @@ RUN apt-get update \
     && wget -qO - "https://www.postgresql.org/media/keys/ACCC4CF8.asc" | apt-key add - \
     && wget -qO - "https://deb.nodesource.com/gpgkey/nodesource.gpg.key" | apt-key add - \
     && apt-get update \
-    && apt-get -qq -y install inotify-tools netcat postgresql-client build-essential git ffmpeg libavformat-dev libavcodec-dev libswscale-dev nodejs libmagic-dev libpng-dev gifsicle optipng libjpeg-progs librsvg2-bin \
-    && apt-get install -y dos2unix
+    && apt-get -qq -y install inotify-tools netcat postgresql-client build-essential git ffmpeg libavformat-dev libavcodec-dev libswscale-dev nodejs libmagic-dev libpng-dev gifsicle optipng libjpeg-progs librsvg2-bin
 
 ADD https://api.github.com/repos/booru/cli_intensities/git/refs/heads/master /tmp/cli_intensities_version.json
 RUN git clone https://github.com/booru/cli_intensities /tmp/cli_intensities \
@@ -56,7 +55,5 @@ COPY --chown=200:200 docker/app/run-prod /bin/run-prod
 COPY --chown=200:200 docker/app/run-development /bin/run-development
 
 RUN mkdir -p /srv/philomena/priv/static/system/images
-
-RUN dos2unix /bin/run-prod
 
 CMD ["bash","/bin/run-prod"]
