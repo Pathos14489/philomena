@@ -22,21 +22,11 @@ if [[ $MIX_ENV == "dev" ]]; then
   /bin/run-development
   exit $?
 fi
+mix ecto.load -r Philomena.Repo -d priv/repo/structure.sql --force
+mix ecto.migrate -r Philomena.Repo
 
-if psql -h postgres -U postgres -lqt | cut -d \| -f 1 | grep -qw philomena_db; then
-  dropdb -h postgres -U postgres philomena_db
-  createdb -h postgres -U postgres philomena_db 
-  mix ecto.setup
-else
-  createdb -h postgres -U postgres philomena_db 
-  mix ecto.setup
-fi
-
-#mix ecto.load -r Philomena.Repo -d priv/repo/structure.sql --skip-if-loaded
-#mix ecto.migrate -r Philomena.Repo
-
-mix reindex_all
-mix ecto.migrate
+#mix reindex_all
+#mix ecto.migrate
 
 # Get local IP
 PHILO_POD_IP=$(ip route get 1.1.1.1 | head -1 | cut -d' ' -f7)
