@@ -1,5 +1,22 @@
 .hide-mobile
   .dropdown.header__dropdown
+    a.header__link href="https://bronyhub.com/"
+      | Home
+      span data-click-preventdefault="true"
+        i.fa.fa-caret-down<
+    .dropdown__content
+      a.header__link href="https://forum.bronyhub.com/"
+        | Forum
+
+  .dropdown.header__dropdown
+    a.header__link href="https://discord.bronyhub.com/"
+      | Discord
+      span data-click-preventdefault="true"
+        i.fa.fa-caret-down< 
+      .dropdown__content
+        a.header__link href="https://rocket.bronyhub.com/"
+          | Rocket
+  .dropdown.header__dropdown
     a.header__link href="/images"
       | Images
       span data-click-preventdefault="true"
@@ -15,19 +32,6 @@
     .dropdown__content
       a.header__link href="/comments"
         | Comments
-  .dropdown.header__dropdown
-    a.header__link href="/forums"
-      | Forums
-      span data-click-preventdefault="true"
-        i.fa.fa-caret-down<
-    .dropdown__content
-      = for forum <- @conn.assigns.forums do
-        a.header__link href=Routes.forum_path(@conn, :show, forum)
-          = forum.name
-
-      a.header__link href="/posts"
-        i.fa.fa-fw.fa-search>
-        | Post Search
   a.header__link href="/tags"
     | Tags
   a.header__link href="/channels"

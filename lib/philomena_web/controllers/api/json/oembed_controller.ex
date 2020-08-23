@@ -53,10 +53,10 @@ defmodule PhilomenaWeb.Api.Json.OembedController do
     %{
       version: "1.0",
       type: "photo",
-      title: "##{image.id} - #{image.tag_list_cache} - YourBooruName",
+      title: "##{image.id} - #{image.tag_list_cache} - Bronyhub",
       author_url: image.source_url,
       author_name: artist_tags(image.tags),
-      provider_name: "YourBooruName",
+      provider_name: "Bronyhub",
       provider_url: PhilomenaWeb.Endpoint.url(),
       cache_age: 7200,
       booru_id: image.id,

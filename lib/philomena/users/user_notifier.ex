@@ -25,7 +25,7 @@ defmodule Philomena.Users.UserNotifier do
 
     ==============================
 
-    Hi #{user.name},
+    Hi #{user.name}! Welcome to Bronyhub Booru!
 
     You can confirm your account by visiting the URL below:
 

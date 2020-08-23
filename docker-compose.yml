@@ -61,7 +61,7 @@ services:
     volumes:
       - ./local-data/philomena:/srv/philomena/priv/static/system
     # for debugging into the container when container-start fails, umcomment the following line:
-    entrypoint: ["sh", "-c", "sleep 2073600"]
+    #entrypoint: ["sh", "-c", "sleep 2073600"]
 
   gdpr-cron:
     build:

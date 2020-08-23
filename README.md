@@ -74,8 +74,8 @@ And if everything goes wrong:
 
 ## Customize
 To customize your booru, find and replace all occurences of the following words with your desired content
-- `YourBooruName`
-- `YourBooruDescription` (sample: `Samplebooru is a linear imagebooru which lets you share, find and discover new art and media surrounding samples.`
+- `Bronyhub`
+- `Bronyhub is a linear imagebooru which lets you share, find and discover new art and media surrounding samples without censorship.` (sample: `Samplebooru is a linear imagebooru which lets you share, find and discover new art and media surrounding samples.`
 - `SomeRandomSampleSecret1234`
 - Rule names that are selectable when reporting violations can be adjusted in `lib/philomena_web/views/report_view.ex`
 - In `config/config.exs` adjust your own `password_pepper`, `otp_secret_key` and `tumblr_api_key`

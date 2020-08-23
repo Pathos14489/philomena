@@ -51,18 +51,6 @@ elixir:
       = number_with_delimiter(img_bucket["non_deleted"]["faves_gt_0"]["doc_count"])
     ' images have been faved by at least one user.
 
-  h3 Forums
-  p
-    ' In our
-    => @forums_count
-    ' forums there have been
-    span.stat>
-      = number_with_delimiter(@topics_count)
-    ' topics started. There have been
-    span.stat>
-      = number_with_delimiter(@posts_count)
-    ' replies to topics in total.
-
   h3 Users
   p
     ' There are

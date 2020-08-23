@@ -1,6 +1,6 @@
 .block#imagespns
   .spnstxt
-    ' Interested in advertising on YourBooruName?
+    ' Interested in advertising on Bronyhub?
     => link "Click here", to: "/pages/advertising"
     ' for information!
 

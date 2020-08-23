@@ -6,18 +6,8 @@
   ],
   "Site Resources": [
     {
-      "title": "Site Rules",
-      "url": "/pages/rules",
-      "bold": true
-    },
-    {
-      "title": "Privacy Policy",
-      "url": "/pages/privacy",
-      "bold": true
-    },
-    {
-      "title": "Tag Guidelines",
-      "url": "/pages/tags",
+      "title": "Terms of Service",
+      "url": "https://bronyhub.com/about.html",
       "bold": true
     },
     {
@@ -25,32 +15,15 @@
       "url": "/pages/uploading"
     },
     {
-      "title": "Spoiler Guidelines",
-      "url": "/pages/spoilers"
-    },
-    {
-      "title": "Takedown Requests",
-      "url": "/pages/takedowns"
-    },
-    {
-      "title": "Do-Not-Post List",
-      "url": "/dnp"
+      "title": "API Docs",
+      "url": "/pages/api"
     }
   ],
   "Help & Information": [
     {
-      "title": "Changelog",
-      "url": "https://github.com/booru/philomena/commits/master",
+      "title": "Contact",
+      "url": "https://bronyhub.com/contact.html",
       "bold": true
-    },
-    {
-      "title": "FAQs",
-      "url": "/pages/faq",
-      "bold": true
-    },
-    {
-      "title": "API Docs",
-      "url": "/pages/api"
     },
     {
       "title": "Keyboard Shortcuts",
@@ -63,30 +36,17 @@
   ],
   "Community": [
     {
-      "title": "Contact",
-      "url": "/pages/contact",
-      "bold": true
-    },
-    {
       "title": "Donations",
-      "url": "/pages/donations",
+      "url": "https://www.patreon.com/pathos14489",
       "bold": true
     },
     {
       "title": "Site Staff List",
-      "url": "/staff"
+      "url": "https://bronyhub.com/staff.html"
     },
     {
       "title": "Statistics",
       "url": "/pages/stats"
-    },
-    {
-      "title": "About",
-      "url": "/pages/about"
-    },
-    {
-      "title": "Twitter",
-      "url": "https://twitter.com/YourBooruName"
     }
   ]
 }

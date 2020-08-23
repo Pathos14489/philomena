@@ -9,8 +9,8 @@
       a href="/pages/donations"
         ' Become a patron or donate!
     .block.block--fixed.block--fixed--sub.center.hide-mobile
-      ' Issues? Want to chat?
-      a href="/pages/contact" Contact us!
+      ' Issues? Want to chat? Need friends?
+      a href="https://discord.bronyhub.com/" Contact us on Discord!
     .block.hide-mobile
       a.block__header--single-item.center href="/search?q=first_seen_at.gt:3 days ago&amp;sf=wilson_score&amp;sd=desc"
         ' Trending Images
@@ -24,11 +24,6 @@
         ' Streams
       = for channel <- @streams do
         = render PhilomenaWeb.ActivityView, "_channel_strip.html", channel: channel, conn: @conn
-    .block.hide-mobile
-      a.block__header--single-item.center href="/forums"
-        ' Forum Activity
-      = for topic <- @topics do
-        = render PhilomenaWeb.ActivityView, "_topic_strip.html", topic: topic, conn: @conn
     .block.hide-mobile
       a.block__header--single-item.center href="/comments"
         ' Recent Comments
