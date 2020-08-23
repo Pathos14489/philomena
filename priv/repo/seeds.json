@@ -18,30 +18,6 @@
     }
   ],
   "forums": [{
-      "name": "Site and Policy",
-      "short_name": "meta",
-      "description": "For site discussion and policy discussion",
-      "access_level": "normal"
-    },
-    {
-      "name": "Tagging Discussion",
-      "short_name": "tagging",
-      "description": "For discussion regarding site tags, including requesting aliases, implications, spoiler images, and tag descriptions.",
-      "access_level": "normal"
-    },
-    {
-      "name": "Uploader Discussion",
-      "short_name": "tagging",
-      "description": "To share uploading resources, tips, and discuss general uploading and related topics. This is not a support forum - please ask for support in Site and Policy.",
-      "access_level": "normal"
-    },
-    {
-      "name": "Site Assistant Discussion",
-      "short_name": "helper",
-      "description": "Restricted - Assistants and Staff",
-      "access_level": "assistant"
-    },
-    {
       "name": "Moderation Discussion",
       "short_name": "mod",
       "description": "Restricted - Staff only",
