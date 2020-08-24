@@ -1,11 +1,13 @@
 nav#burger
+  a href="https://bronyhub.com/"
+    ' Hub
   a href="/"
     i.fa-fw.favicon-home<>
     ' Home
   a href="/images/new"
     i.fa.fa-fw.fa-upload<>
     ' Upload
-  a href="/forums"
+  a href="https://forum.bronyhub.com/"
     i.fas.fa-fw.fa-pen-square<>
     ' Forums
   a href="/tags"
