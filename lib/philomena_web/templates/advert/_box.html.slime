@@ -10,5 +10,5 @@
   p
     strong
       ' Hosting an imageboard costs money -
-      = link "help support us financially", to: "/pages/donations"
+      = link "help support us financially", to: "https://www.patreon.com/pathos14489"
       ' !

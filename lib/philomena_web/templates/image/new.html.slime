@@ -7,12 +7,7 @@
     .dnp-warning
       h4
         ' Read the
-        a> href="/pages/rules" site rules
-        ' and check our
-        a> href="/dnp" do-not-post list
-      p
-        ' Don't post content the artist doesn't want here (or shared in general),
-        strong including commercial content.
+        a> href="/pages/rules" site rules!
 
     p
       strong

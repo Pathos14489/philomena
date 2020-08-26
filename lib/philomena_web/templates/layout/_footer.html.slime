@@ -18,8 +18,7 @@ footer#footer
     ' Powered by muffins and the 
     a href="https://github.com/Pathos14489/philomena" philomena project
     br
-    ' Served by
-    => hostname()
+    ' Served by blackjack
     | (
     = render_time(@conn)
     | ms)
